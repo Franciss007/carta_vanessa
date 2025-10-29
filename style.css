@@ -1,0 +1,73 @@
+/* Estilização geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    
+    /* Se quiser jogar o conteúdo mais para baixo, ajuste aqui */
+    padding-top: 100px; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container principal */
+  .container {
+    background: #fff;
+    padding: 20px 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    animation: pulse 5s infinite ease-in-out;
+  }
+  
+  /* Título */
+  h1 {
+    color: #ff69b4;
+  }
+  
+  /* Parágrafos */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Botão */
+  .button {
+    background-color: #f779b8;
+    color: #000000;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor:pointer;
+    transition: background 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff008c;
+    color: #ddd;
+  }
+  
+  /* Cartinha (inicialmente oculta) */
+  .letter {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {0% {
+    transform: scale(1); /* Tamanho normal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+     transform: scale(1.2); 
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  }
+     100% {
+      transform: scale(1); /* Volta ao tamanho normal */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
